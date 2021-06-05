@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <ImageView
+        android:id="@+id/service_imageView"
+        android:background="#E4D5D5"
+        android:layout_width="60dp"
+        android:layout_margin="16dp"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:layout_toStartOf="@id/status_of_service"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/service_imageView">
+
+        <TextView
+            android:text="Basic Service"
+            android:textSize="22sp"
+            android:fontFamily="@font/work_sans_extra_bold_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/service_name"/>
+
+        <TextView
+            android:text="sdfsdfdf234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price_textView"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/status_of_service"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark as done"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+
+</RelativeLayout>
